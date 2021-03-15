@@ -1,0 +1,172 @@
+.left{
+
+	background-color: teal;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+}
+
+.right{
+
+	background-color: antiquewhite;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	right: 0;
+
+}
+
+.heading1{
+
+	position: absolute;
+	left: 12%;
+	bottom: 70%;
+
+
+}
+
+.heading2{
+
+	position: absolute;
+	right: 15%;
+	bottom: 70%;
+
+}
+
+.rocket{
+
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	width: 143px;
+	height: 272px;
+	margin-left: -71.5px;
+	background: url('https://github.com/websites-dotcom/js-rocket/blob/main/rocket-state1.png?raw=true')no-repeat 0 0;
+	transition: bottom 5000ms;
+
+}
+
+body.bodystate1 .rocket{
+	
+	transition: none;
+
+}
+
+body.bodystate2 .rocket{
+	background-image: url('https://github.com/websites-dotcom/js-rocket/blob/main/rocket-state2.gif?raw=true');
+}
+
+body.bodystate3 .rocket,
+body.bodystate4 .rocket{
+	background-image: url('https://github.com/websites-dotcom/js-rocket/blob/main/rocket-state3.gif?raw=true') ;
+}
+
+body.bodystate5 .rocket{
+	width: 209px;
+	height: 200px;
+	margin-left: -104.5px;
+	bottom: 25px;
+	background-image: url('https://github.com/websites-dotcom/js-rocket/blob/main/boom.png?raw=true');
+}
+
+
+
+body.bodystate3 .rocket,
+body.bodystate4 .rocket
+{
+
+	bottom: 1000px;
+
+}
+
+.ground{
+
+	position: absolute;
+	background-color: sandybrown;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+
+}
+
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+
+
+	display: none;
+
+}
+
+body.bodystate1 .state1{display: block}
+body.bodystate2 .state2{display: block}
+body.bodystate3 .state3{display: block}
+body.bodystate4 .state4{display: block}
+body.bodystate5 .state5{display: block}
+
+.nervous{
+
+	position: absolute;
+	bottom: 220px;
+	background: url("https://github.com/websites-dotcom/js-rocket/blob/main/nervous.png?raw=true") no-repeat 0 0;
+	width: 223px;
+	height: 100px;
+	left: 50%;
+	margin-left: -180px;
+	display: none;
+
+}
+
+.nervous.show{
+
+	display: block;
+
+}
+
+.excited{
+
+	position: absolute;
+	background: url("https://github.com/websites-dotcom/js-rocket/blob/main/cant-wait.png?raw=true") no-repeat 0 0;
+
+	width: 206px;
+	height: 65px;
+	right: 40%;
+	margin-right: -180px;
+	bottom: 200px;
+	display: none;
+}
+
+.excited.show{
+
+	display: block;
+
+}
+
+
+
+a.button{
+
+
+	display: inline-block;
+	background: white;
+	font-family: Century Gothic;
+	color: rosybrown;
+	padding: 20px 40px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 10px;
+	transition: color 300ms;
+}
+a:hover{
+
+	color: sandybrown;
+
+}
